@@ -3,6 +3,7 @@ package commands
 import (
 	"LyGen/constant"
 	"LyGen/db"
+	"LyGen/logic"
 	"LyGen/tools"
 	"bufio"
 	"fmt"
@@ -63,7 +64,10 @@ func (c *Commands) customDir(_ ...string) int {
 func (c *Commands) markDown(args ...string) int {
 	fmt.Println("Preparing to generate the markdown document...")
 	c.customDir()
-
+	err := logic.Lg.CreateMarkdown()
+	if err != nil {
+		log.Println("MarkDown>>", err)
+	}
 	return 0
 }
 

@@ -2,58 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91185cee-a108-4be1-8d54-fb923254758f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/asset.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/demo/bindata.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/gormtpl/Entity.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/gormtpl/Init.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/gormtpl/newentity.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/gormtpl/newinit.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/gormtpl/tools.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/microservice/client/ai_agent_client.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/microservice/client/ai_agent_test.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/microservice/main/main.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/microservice/param/erro/err.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/microservice/param/global/const.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/microservice/param/pb/ai_service.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/microservice/param/req/showVO.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/microservice/param/res/ai_distort.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/microservice/param/vo/vo.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/microservice/src/endpoint/ai_endpoint.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/microservice/src/endpoint/ai_middleware.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/microservice/src/service/ai_middleware_log.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/microservice/src/service/ai_middleware_metrics.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/microservice/src/service/ai_middleware_trace.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/microservice/src/service/service.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/microservice/src/transport/grpc.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/microservice/src/transport/http.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/microservice/src/transport/logErrHandler.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/microservice/src/transport/request_decoder.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/microservice/src/transport/response_encoder.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/sqlTpl/crud.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/sqlTpl/curd.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/sqlTpl/entity.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/sqlTpl/init.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/sqlTpl/tables.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/tpl/curd.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/tpl/e.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/tpl/entity.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/tpl/example.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/tpl/init.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/tpl/markdown.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/tpl/tables.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/constant/maps.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/constant/temp.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/generater/generater.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logic/logic.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/str.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/types/mysql.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/commands.go" beforeDir="false" afterPath="$PROJECT_DIR$/commands/commands.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/mysql.go" beforeDir="false" afterPath="$PROJECT_DIR$/db/mysql.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/file.go" beforeDir="false" afterPath="$PROJECT_DIR$/tools/file.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +46,9 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\code\goProject\LyGen\tools" />
     </key>

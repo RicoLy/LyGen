@@ -8,6 +8,8 @@ import (
 	"fmt"
 )
 
+var Lg = new(Logic)
+
 type Logic struct {
 }
 

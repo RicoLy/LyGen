@@ -2,6 +2,7 @@ package commands
 
 import (
 	"LyGen/constant"
+	"LyGen/db"
 	"LyGen/tools"
 	"bufio"
 	"fmt"
@@ -63,6 +64,25 @@ func (c *Commands) markDown(args ...string) int {
 }
 
 func (c Commands) ConnectMysql(args ...string) int {
+
+	if constant.MysqlConn == nil {
+		for {
+			if constant.MysqlDataSource == "" {
+				fmt.Print("Please set mysql dataSource>")
+				line, _, _ := bufio.NewReader(os.Stdin).ReadLine()
+				constant.MysqlDataSource = string(line)
+			}
+
+			conn, err := db.InitMysqlDB(constant.MysqlDataSource)
+			if err != nil || conn == nil {
+				fmt.Printf("connect mysql err: %v", err)
+				constant.MysqlDataSource = ""
+				continue
+			}
+			constant.MysqlConn = conn
+			break
+		}
+	}
 
 	return 0
 }

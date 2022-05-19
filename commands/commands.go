@@ -59,13 +59,18 @@ func (c *Commands) customDir(_ ...string) int {
 	return 0
 }
 
+// markDown 自定义生成目录
 func (c *Commands) markDown(args ...string) int {
+	fmt.Println("Preparing to generate the markdown document...")
+	c.customDir()
+
 	return 0
 }
 
-func (c Commands) ConnectMysql(args ...string) int {
+// ConnectMysql 初始化数据库
+func (c Commands) ConnectMysql(_ ...string) int {
 
-	if constant.MysqlConn == nil {
+	if db.MysqlRepo.DB == nil {
 		for {
 			if constant.MysqlDataSource == "" {
 				fmt.Print("Please set mysql dataSource>")
@@ -73,13 +78,12 @@ func (c Commands) ConnectMysql(args ...string) int {
 				constant.MysqlDataSource = string(line)
 			}
 
-			conn, err := db.InitMysqlDB(constant.MysqlDataSource)
-			if err != nil || conn == nil {
+			err := db.MysqlRepo.InitMysqlDB(constant.MysqlDataSource)
+			if err != nil || db.MysqlRepo.DB == nil {
 				fmt.Printf("connect mysql err: %v", err)
 				constant.MysqlDataSource = ""
 				continue
 			}
-			constant.MysqlConn = conn
 			break
 		}
 	}

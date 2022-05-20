@@ -200,24 +200,25 @@ func AssetNames() []string {
 
 // _bindata is a table, holding each asset generator, mapped to its name.
 var _bindata = map[string]func() ([]byte, error){
-	"assets/gormtpl/Entity.tpl": assets_gormtpl_entity_tpl,
-	"assets/gormtpl/Init.tpl": assets_gormtpl_init_tpl,
+	"assets/gormtpl/Entity.tpl":    assets_gormtpl_entity_tpl,
+	"assets/gormtpl/Init.tpl":      assets_gormtpl_init_tpl,
 	"assets/gormtpl/newentity.tpl": assets_gormtpl_newentity_tpl,
-	"assets/gormtpl/newinit.tpl": assets_gormtpl_newinit_tpl,
-	"assets/gormtpl/tools.tpl": assets_gormtpl_tools_tpl,
-	"assets/sqlTpl/crud.tpl": assets_sqltpl_crud_tpl,
-	"assets/sqlTpl/curd.tpl": assets_sqltpl_curd_tpl,
-	"assets/sqlTpl/entity.tpl": assets_sqltpl_entity_tpl,
-	"assets/sqlTpl/init.tpl": assets_sqltpl_init_tpl,
-	"assets/sqlTpl/tables.tpl": assets_sqltpl_tables_tpl,
-	"assets/tpl/curd.tpl": assets_tpl_curd_tpl,
-	"assets/tpl/e.tpl": assets_tpl_e_tpl,
-	"assets/tpl/entity.tpl": assets_tpl_entity_tpl,
-	"assets/tpl/example.tpl": assets_tpl_example_tpl,
-	"assets/tpl/init.tpl": assets_tpl_init_tpl,
-	"assets/tpl/markdown.tpl": assets_tpl_markdown_tpl,
-	"assets/tpl/tables.tpl": assets_tpl_tables_tpl,
+	"assets/gormtpl/newinit.tpl":   assets_gormtpl_newinit_tpl,
+	"assets/gormtpl/tools.tpl":     assets_gormtpl_tools_tpl,
+	"assets/sqlTpl/crud.tpl":       assets_sqltpl_crud_tpl,
+	"assets/sqlTpl/curd.tpl":       assets_sqltpl_curd_tpl,
+	"assets/sqlTpl/entity.tpl":     assets_sqltpl_entity_tpl,
+	"assets/sqlTpl/init.tpl":       assets_sqltpl_init_tpl,
+	"assets/sqlTpl/tables.tpl":     assets_sqltpl_tables_tpl,
+	"assets/tpl/curd.tpl":          assets_tpl_curd_tpl,
+	"assets/tpl/e.tpl":             assets_tpl_e_tpl,
+	"assets/tpl/entity.tpl":        assets_tpl_entity_tpl,
+	"assets/tpl/example.tpl":       assets_tpl_example_tpl,
+	"assets/tpl/init.tpl":          assets_tpl_init_tpl,
+	"assets/tpl/markdown.tpl":      assets_tpl_markdown_tpl,
+	"assets/tpl/tables.tpl":        assets_tpl_tables_tpl,
 }
+
 // AssetDir returns the file names below a certain
 // directory embedded in the file by go-bindata.
 // For example if you run go-bindata on data/... and data contains the
@@ -254,42 +255,26 @@ func AssetDir(name string) ([]string, error) {
 }
 
 type _bintree_t struct {
-	Func func() ([]byte, error)
+	Func     func() ([]byte, error)
 	Children map[string]*_bintree_t
 }
+
 var _bintree = &_bintree_t{nil, map[string]*_bintree_t{
-	"assets/gormtpl/Entity.tpl": &_bintree_t{assets_gormtpl_entity_tpl, map[string]*_bintree_t{
-	}},
-	"assets/gormtpl/Init.tpl": &_bintree_t{assets_gormtpl_init_tpl, map[string]*_bintree_t{
-	}},
-	"assets/gormtpl/newentity.tpl": &_bintree_t{assets_gormtpl_newentity_tpl, map[string]*_bintree_t{
-	}},
-	"assets/gormtpl/newinit.tpl": &_bintree_t{assets_gormtpl_newinit_tpl, map[string]*_bintree_t{
-	}},
-	"assets/gormtpl/tools.tpl": &_bintree_t{assets_gormtpl_tools_tpl, map[string]*_bintree_t{
-	}},
-	"assets/sqlTpl/crud.tpl": &_bintree_t{assets_sqltpl_crud_tpl, map[string]*_bintree_t{
-	}},
-	"assets/sqlTpl/curd.tpl": &_bintree_t{assets_sqltpl_curd_tpl, map[string]*_bintree_t{
-	}},
-	"assets/sqlTpl/entity.tpl": &_bintree_t{assets_sqltpl_entity_tpl, map[string]*_bintree_t{
-	}},
-	"assets/sqlTpl/init.tpl": &_bintree_t{assets_sqltpl_init_tpl, map[string]*_bintree_t{
-	}},
-	"assets/sqlTpl/tables.tpl": &_bintree_t{assets_sqltpl_tables_tpl, map[string]*_bintree_t{
-	}},
-	"assets/tpl/curd.tpl": &_bintree_t{assets_tpl_curd_tpl, map[string]*_bintree_t{
-	}},
-	"assets/tpl/e.tpl": &_bintree_t{assets_tpl_e_tpl, map[string]*_bintree_t{
-	}},
-	"assets/tpl/entity.tpl": &_bintree_t{assets_tpl_entity_tpl, map[string]*_bintree_t{
-	}},
-	"assets/tpl/example.tpl": &_bintree_t{assets_tpl_example_tpl, map[string]*_bintree_t{
-	}},
-	"assets/tpl/init.tpl": &_bintree_t{assets_tpl_init_tpl, map[string]*_bintree_t{
-	}},
-	"assets/tpl/markdown.tpl": &_bintree_t{assets_tpl_markdown_tpl, map[string]*_bintree_t{
-	}},
-	"assets/tpl/tables.tpl": &_bintree_t{assets_tpl_tables_tpl, map[string]*_bintree_t{
-	}},
+	"assets/gormtpl/Entity.tpl":    &_bintree_t{assets_gormtpl_entity_tpl, map[string]*_bintree_t{}},
+	"assets/gormtpl/Init.tpl":      &_bintree_t{assets_gormtpl_init_tpl, map[string]*_bintree_t{}},
+	"assets/gormtpl/newentity.tpl": &_bintree_t{assets_gormtpl_newentity_tpl, map[string]*_bintree_t{}},
+	"assets/gormtpl/newinit.tpl":   &_bintree_t{assets_gormtpl_newinit_tpl, map[string]*_bintree_t{}},
+	"assets/gormtpl/tools.tpl":     &_bintree_t{assets_gormtpl_tools_tpl, map[string]*_bintree_t{}},
+	"assets/sqlTpl/crud.tpl":       &_bintree_t{assets_sqltpl_crud_tpl, map[string]*_bintree_t{}},
+	"assets/sqlTpl/curd.tpl":       &_bintree_t{assets_sqltpl_curd_tpl, map[string]*_bintree_t{}},
+	"assets/sqlTpl/entity.tpl":     &_bintree_t{assets_sqltpl_entity_tpl, map[string]*_bintree_t{}},
+	"assets/sqlTpl/init.tpl":       &_bintree_t{assets_sqltpl_init_tpl, map[string]*_bintree_t{}},
+	"assets/sqlTpl/tables.tpl":     &_bintree_t{assets_sqltpl_tables_tpl, map[string]*_bintree_t{}},
+	"assets/tpl/curd.tpl":          &_bintree_t{assets_tpl_curd_tpl, map[string]*_bintree_t{}},
+	"assets/tpl/e.tpl":             &_bintree_t{assets_tpl_e_tpl, map[string]*_bintree_t{}},
+	"assets/tpl/entity.tpl":        &_bintree_t{assets_tpl_entity_tpl, map[string]*_bintree_t{}},
+	"assets/tpl/example.tpl":       &_bintree_t{assets_tpl_example_tpl, map[string]*_bintree_t{}},
+	"assets/tpl/init.tpl":          &_bintree_t{assets_tpl_init_tpl, map[string]*_bintree_t{}},
+	"assets/tpl/markdown.tpl":      &_bintree_t{assets_tpl_markdown_tpl, map[string]*_bintree_t{}},
+	"assets/tpl/tables.tpl":        &_bintree_t{assets_tpl_tables_tpl, map[string]*_bintree_t{}},
 }}

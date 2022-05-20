@@ -1,8 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="91185cee-a108-4be1-8d54-fb923254758f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/fiber/cmd/core.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fiber/cmd/etc/config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fiber/cmd/global/global.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fiber/cmd/global/init.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fiber/cmd/global/mysql.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fiber/cmd/global/redis.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fiber/cmd/internal/config/config.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fiber/cmd/internal/constant/constant.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fiber/cmd/internal/handler/order/list_handler.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fiber/cmd/internal/handler/routes.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fiber/cmd/internal/handler/user/add_handler.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fiber/cmd/internal/handler/user/captcha_handler.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fiber/cmd/internal/handler/user/detail_handler.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fiber/cmd/internal/handler/user/login_handler.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fiber/cmd/internal/logic/order/list_logic.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fiber/cmd/internal/logic/user/add_logic.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fiber/cmd/internal/logic/user/captcha_logic.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fiber/cmd/internal/logic/user/detail_logic.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fiber/cmd/internal/logic/user/login_logic.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fiber/cmd/internal/middleware/casbin_middleware.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fiber/cmd/internal/middleware/jwt_middleware.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fiber/cmd/internal/middleware/wrap_ctx_middleware.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fiber/cmd/internal/response/response.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fiber/cmd/internal/tools/cypher/aes.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fiber/cmd/internal/tools/cypher/md5.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fiber/cmd/internal/tools/jwt/jwt.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fiber/cmd/internal/tools/logger/log_tool.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fiber/cmd/internal/tools/logger/logger.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fiber/cmd/internal/tools/str/str.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fiber/cmd/internal/tools/validate/validate.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fiber/cmd/internal/types/types.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fiber/cmd/model/base.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fiber/cmd/model/user.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/goctl/api/config.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/goctl/api/context.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/goctl/api/etc.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/goctl/api/handler - 副本.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/goctl/api/handler.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/goctl/api/logic.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/goctl/api/main.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/goctl/api/middleware.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/goctl/api/route-addition.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/goctl/api/routes.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/goctl/api/template.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/goctl/api/types.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/goctl/docker/docker.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/goctl/kube/deployment.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/goctl/kube/job.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/goctl/model/delete.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/goctl/model/err.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/goctl/model/field.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/goctl/model/find-one-by-field-extra-method.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/goctl/model/find-one-by-field.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/goctl/model/find-one.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/goctl/model/import-no-cache.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/goctl/model/import.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/goctl/model/insert.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/goctl/model/interface-delete.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/goctl/model/interface-find-one-by-field.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/goctl/model/interface-find-one.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/goctl/model/interface-insert.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/goctl/model/interface-update.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/goctl/model/model-gen.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/goctl/model/model-new.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/goctl/model/model.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/goctl/model/table-name.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/goctl/model/tag.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/goctl/model/types.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/goctl/model/update.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/goctl/model/var.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/goctl/mongo/err.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/goctl/mongo/model.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/goctl/newapi/newtemplate.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/goctl/rpc/call-func.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/goctl/rpc/call-interface-func.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/goctl/rpc/call.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/goctl/rpc/config.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/goctl/rpc/etc.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/goctl/rpc/logic-func.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/goctl/rpc/logic.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/goctl/rpc/main.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/goctl/rpc/server-func.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/goctl/rpc/server.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/goctl/rpc/svc.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/goctl/rpc/template.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/os.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/types/cmd.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/asset.go" beforeDir="false" afterPath="$PROJECT_DIR$/assets/asset.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/demo/bindata.go" beforeDir="false" afterPath="$PROJECT_DIR$/assets/demo/bindata.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/commands.go" beforeDir="false" afterPath="$PROJECT_DIR$/commands/commands.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constant/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/constant/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constant/maps.go" beforeDir="false" afterPath="$PROJECT_DIR$/constant/maps.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constant/template.go" beforeDir="false" afterPath="$PROJECT_DIR$/constant/template.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/core.go" beforeDir="false" afterPath="$PROJECT_DIR$/core/core.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/mysql.go" beforeDir="false" afterPath="$PROJECT_DIR$/db/mysql.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generater/generater.go" beforeDir="false" afterPath="$PROJECT_DIR$/generater/generater.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logic/logic.go" beforeDir="false" afterPath="$PROJECT_DIR$/logic/logic.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/file.go" beforeDir="false" afterPath="$PROJECT_DIR$/tools/file.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/str.go" beforeDir="false" afterPath="$PROJECT_DIR$/tools/str.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/types/mysql.go" beforeDir="false" afterPath="$PROJECT_DIR$/types/mysql.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +141,7 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" url="file:///usr/local/go" />
+  <component name="GOROOT" path="E:\Go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -43,15 +168,35 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/goctl" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\code\goProject\LyGen\assets\goctl" />
+      <recent name="F:\code\goProject\LyGen\assets" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\code\goProject\LyGen\assets\fiber" />
+      <recent name="F:\code\goProject\LyGen\types" />
       <recent name="F:\code\goProject\LyGen\tools" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="go build LyGen" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="LyGen" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <package value="LyGen" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build LyGen" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
@@ -67,8 +212,55 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1018" y="463" key="#GOROOT" timestamp="1653038433047">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1018" y="463" key="#GOROOT/0.0.1920.1040@0.0.1920.1040" timestamp="1653038433047" />
+    <state x="985" y="407" key="#Go_Linter" timestamp="1653012555185">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="985" y="407" key="#Go_Linter/0.0.1920.1040@0.0.1920.1040" timestamp="1653012555185" />
+    <state width="1340" height="265" key="GridCell.Tab.0.bottom" timestamp="1653035254466">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1340" height="265" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1653035254466" />
+    <state width="1340" height="265" key="GridCell.Tab.0.center" timestamp="1653035254466">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1340" height="265" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1653035254466" />
+    <state width="1340" height="265" key="GridCell.Tab.0.left" timestamp="1653035254466">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1340" height="265" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1653035254466" />
+    <state width="1340" height="265" key="GridCell.Tab.0.right" timestamp="1653035254466">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1340" height="265" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1653035254466" />
+    <state width="1340" height="328" key="GridCell.Tab.1.bottom" timestamp="1653019507519">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1340" height="328" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1653019507519" />
+    <state width="1340" height="328" key="GridCell.Tab.1.center" timestamp="1653019507518">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1340" height="328" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1653019507518" />
+    <state width="1340" height="328" key="GridCell.Tab.1.left" timestamp="1653019507517">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1340" height="328" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1653019507517" />
+    <state width="1340" height="328" key="GridCell.Tab.1.right" timestamp="1653019507519">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1340" height="328" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1653019507519" />
+    <state x="1089" y="254" width="672" height="678" key="search.everywhere.popup" timestamp="1653032234462">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1089" y="254" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1653032234462" />
   </component>
 </project>

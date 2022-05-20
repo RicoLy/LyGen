@@ -1,7 +1,9 @@
 package tools
 
 import (
+	"fmt"
 	"io"
+	"log"
 	"os"
 )
 
@@ -34,6 +36,19 @@ func CreateDir(path string) bool {
 	return true
 }
 
+// 创建目录
+func CreateDirs(path string) string {
+	if IsDirOrFileExist(path) == false {
+		b := CreateDir(path)
+		if !b {
+			log.Fatalf("Directory created failed>>%s\n", path)
+			return ""
+		}
+		fmt.Printf("Directory created success:%s\n", path)
+	}
+	return path
+}
+
 // IsDirOrFileExist 判断文件 或 目录是否存在
 func IsDirOrFileExist(path string) bool {
 	_, err := os.Stat(path)
@@ -57,4 +72,14 @@ func WriteFileAppend(filename string, data string) (count int, err error) {
 		return
 	}
 	return
+}
+
+// WriteAppendFile 追加写文件
+func WriteAppendFile(path, data string) (err error) {
+	if _, err := WriteFileAppend(path, data); err == nil {
+		fmt.Printf("Generate success:%s\n", path)
+		return nil
+	} else {
+		return err
+	}
 }

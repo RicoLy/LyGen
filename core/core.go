@@ -3,6 +3,10 @@ package core
 import (
 	"LyGen/commands"
 	"LyGen/constant"
+	"LyGen/db"
+	"log"
+	"os"
+
 	"github.com/urfave/cli/v2"
 )
 
@@ -42,7 +46,6 @@ func usage(app *cli.App) {
 	}
 }
 
-
 func Start(app *cli.App) {
 	usage(app)
 	app.Action = func(c *cli.Context) error {
@@ -52,5 +55,11 @@ func Start(app *cli.App) {
 			return cli.Exit(err.Error(), 1)
 		}
 		return nil
+	}
+
+	// cli start run
+	if err := app.Run(os.Args); err != nil {
+		_ = db.MysqlRepo.Close()
+		log.Fatal("RUN>>", err)
 	}
 }

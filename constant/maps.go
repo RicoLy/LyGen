@@ -1,5 +1,7 @@
 package constant
 
+import "LyGen/types"
+
 // MysqlTypeToGoType mysql类型 <=> golang类型
 var MysqlTypeToGoType = map[string]string{
 	"tinyint":    "int32",
@@ -54,4 +56,19 @@ var MysqlTypeToGoNullType = map[string]string{
 	"mediumtext": "sql.NullString",
 	"longblob":   "sql.NullString",
 	"longtext":   "sql.NullString",
+}
+
+var CmdHelp = []types.CmdEntity{
+	{"0", "Set build directory"},
+	{"1", "Generate the table markdown document"},
+	{"2", "Generate table structure entities"},
+	{"21", "myGenerate table structure entities"},
+	{"3", "Generate CURD insert, delete, update and select"},
+	{"31", "myGenerate CURD insert, delete, update and select"},
+	{"32", "myGenerate Sql Entity And CURD insert, delete, update and select"},
+	{"4", "Sets the struct mapping name"},
+	{"5", "Find or set the table name"},
+	{"7, c, clear", "Clear the screen"},
+	{"8, h, help", "Show help list"},
+	{"9, q, quit", "Quit"},
 }

@@ -4,6 +4,7 @@ import (
 	"LyGen/constant"
 	"LyGen/db"
 	"LyGen/logic"
+	"LyGen/service"
 	"LyGen/tools"
 	"bufio"
 	"fmt"
@@ -18,6 +19,7 @@ type Commands struct {
 func (c Commands) Start() error {
 
 	br := bufio.NewReader(os.Stdin)
+	c.Help()
 	handlers := c.Handlers()
 	for {
 		fmt.Print("-> # ")
@@ -35,13 +37,19 @@ func (c Commands) Start() error {
 			fmt.Println("Unknown command>>", tokens[0])
 		}
 	}
-	return nil
+
+	return db.MysqlRepo.Close()
 }
 
 func (c *Commands) Handlers() map[string]func(args ...string) int {
 	return map[string]func(args ...string) int{
-		"0": c.customDir,
-		"1": c.markDown,
+		"0":  c.customDir,
+		"1":  c.markDown,
+		"2":  c.GenerateEntry,
+		"3":  c.GenerateCURD,
+		"cl": c.Clean,
+		"q":  c.Quit,
+		"h":  c.Help,
 	}
 }
 
@@ -61,9 +69,11 @@ func (c *Commands) customDir(_ ...string) int {
 }
 
 // markDown 自定义生成目录
-func (c *Commands) markDown(args ...string) int {
-	fmt.Println("Preparing to generate the markdown document...")
+func (c *Commands) markDown(_ ...string) int {
 	c.customDir()
+	c.ConnectMysql()
+	c._setDatabaseName()
+	fmt.Println("Preparing to generate the markdown document...")
 	err := logic.Lg.CreateMarkdown()
 	if err != nil {
 		log.Println("MarkDown>>", err)
@@ -72,7 +82,7 @@ func (c *Commands) markDown(args ...string) int {
 }
 
 // ConnectMysql 初始化数据库
-func (c Commands) ConnectMysql(_ ...string) int {
+func (c *Commands) ConnectMysql(_ ...string) int {
 
 	if db.MysqlRepo.DB == nil {
 		for {
@@ -94,3 +104,91 @@ func (c Commands) ConnectMysql(_ ...string) int {
 
 	return 0
 }
+
+// GenerateEntry 生成结构体
+func (c *Commands) GenerateEntry(args ...string) int {
+	formats := c._setFormat()
+	c.customDir()
+	c.ConnectMysql()
+	c._setDatabaseName()
+	err := logic.Lg.CreateEntity(formats)
+	if err != nil {
+		log.Println("GenerateEntry>>", err.Error())
+		return 0
+	}
+	go tools.Gofmt(constant.CustomDir) //格式化代码
+	return 0
+}
+
+// GenerateCURD 生成CRUD代码
+func (c *Commands) GenerateCURD(_ ...string) int {
+	formats := c._setFormat()
+	c.customDir()
+	c.ConnectMysql()
+	c._setDatabaseName()
+	err := logic.Lg.CreateCURD(formats)
+	if err != nil {
+		log.Println("GenerateCURD>>", err.Error())
+	}
+	go tools.Gofmt(constant.CustomDir)
+	return 0
+}
+
+// _setFormat set struct format
+func (c *Commands) _setFormat() []string {
+	fmt.Print("Do you need to set the format of the structure?(Yes|No)>")
+	line, _, _ := bufio.NewReader(os.Stdin).ReadLine()
+	switch strings.ToLower(string(line)) {
+	case "yes", "y":
+		fmt.Print("Set the mapping name of the structure, separated by a comma (example :json,gorm)>")
+		input, _, _ := bufio.NewReader(os.Stdin).ReadLine()
+		if string(input) != "" {
+			formatList := tools.CheckCharDoSpecialArr(string(input), ',', `[\w\,\-]+`)
+			if len(formatList) > 0 {
+				fmt.Printf("Set format success: %v\n", formatList)
+				return formatList
+			}
+		}
+		fmt.Println("Set failed")
+	}
+
+	return nil
+}
+
+//help list
+func (c *Commands) Help(args ...string) int {
+	for _, row := range constant.CmdHelp {
+		s := fmt.Sprintf("%s %s\n", "NO:"+row.No, row.Msg)
+		fmt.Print(s)
+	}
+	return 0
+}
+
+func (c Commands) _setDatabaseName(args ...string) int {
+	if service.DB.DBName == "" {
+		for {
+			fmt.Print("Please set database name>")
+			line, _, _ := bufio.NewReader(os.Stdin).ReadLine()
+			if string(line) != "" {
+				service.DB.DBName = string(line)
+				break
+			} else {
+				log.Println("database name is empty>>")
+			}
+		}
+	}
+	return 0
+}
+
+// Quit 退出
+func (c *Commands) Quit(_ ...string) int {
+	return 1
+}
+
+// Clean 清屏
+func (c *Commands) Clean(_ ...string) int {
+	tools.Clean()
+	return 0
+}
+
+

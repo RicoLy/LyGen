@@ -2,6 +2,7 @@ package db
 
 import (
 	"database/sql"
+
 	_ "github.com/go-sql-driver/mysql"
 )
 
@@ -24,6 +25,13 @@ func (m *Mysql) InitMysqlDB(dataSource string) (err error) {
 	connection.SetMaxIdleConns(5)
 	connection.SetMaxOpenConns(5)
 	m.DB = connection
+	return nil
+}
+
+func (m *Mysql) Close() error {
+	if m.DB != nil {
+		return m.DB.Close()
+	}
 	return nil
 }
 

@@ -1,4 +1,4 @@
-module FiberDemo
+module {{.ProjectName}}
 
 go 1.16
 

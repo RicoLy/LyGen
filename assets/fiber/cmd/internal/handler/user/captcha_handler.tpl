@@ -1,8 +1,8 @@
 package user
 
 import (
-	"FiberDemo/cmd/internal/logic/user"
-	"FiberDemo/cmd/internal/response"
+	"{{.ProjectName}}/cmd/internal/logic/user"
+	"{{.ProjectName}}/cmd/internal/response"
 	"github.com/gofiber/fiber/v2"
 )
 

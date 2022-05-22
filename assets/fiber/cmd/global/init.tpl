@@ -1,6 +1,6 @@
 package global
 
-import "FiberDemo/cmd/internal/config"
+import "{{.ProjectName}}/cmd/internal/config"
 
 func Init(c *config.Config) (err error) {
 	// InitRedis(c)

@@ -1,9 +1,9 @@
 package jwt
 
 import (
-	"FiberDemo/cmd/internal/config"
-	"FiberDemo/cmd/internal/tools/cypher"
-	"FiberDemo/cmd/model"
+	"{{.ProjectName}}/cmd/internal/config"
+	"{{.ProjectName}}/cmd/internal/tools/cypher"
+	"{{.ProjectName}}/cmd/model"
 	"time"
 )
 
@@ -12,7 +12,6 @@ var Jwt = NewJWT()
 type CustomClaims struct {
 	PhoneNum   string `json:"phoneNum"`   // 用户id
 	Username   string `json:"username"`   // 用户名
-	NickName   string `json:"nickName"`   // 昵称
 	BufferTime int64  `json:"bufferTime"` // 缓冲时间
 	jwt.StandardClaims
 }
@@ -35,7 +34,6 @@ func (j *JWT) CreateTokenByUserInfo(user *model.User) (string, error) {
 	claims := &CustomClaims{
 		PhoneNum:   phoneNum,
 		Username:   user.Username,
-		NickName:   user.NickName,
 		BufferTime: config.GlobalConfig.JWT.BufferTime,
 		//BufferTime: 2592000,
 		StandardClaims: jwt.StandardClaims{

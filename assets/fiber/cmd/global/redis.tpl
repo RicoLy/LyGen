@@ -1,7 +1,7 @@
 package global
 
 import (
-	"FiberDemo/cmd/internal/config"
+	"{{.ProjectName}}/cmd/internal/config"
 )
 
 

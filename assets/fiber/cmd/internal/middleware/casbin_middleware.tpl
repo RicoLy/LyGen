@@ -1,7 +1,7 @@
 package middleware
 
 import (
-	"FiberDemo/cmd/internal/tools/logger"
+	"{{.ProjectName}}/cmd/internal/tools/logger"
 	"github.com/gofiber/fiber/v2"
 )
 

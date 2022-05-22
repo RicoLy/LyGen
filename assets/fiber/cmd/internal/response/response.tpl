@@ -1,9 +1,9 @@
 package response
 
 import (
-	"FiberDemo/cmd/internal/constant"
-	"FiberDemo/cmd/internal/tools/logger"
-	"FiberDemo/cmd/internal/tools/str"
+	"{{.ProjectName}}/cmd/internal/constant"
+	"{{.ProjectName}}/cmd/internal/tools/logger"
+	"{{.ProjectName}}/cmd/internal/tools/str"
 	"go.uber.org/zap"
 )
 

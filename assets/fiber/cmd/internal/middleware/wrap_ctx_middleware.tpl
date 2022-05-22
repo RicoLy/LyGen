@@ -1,8 +1,8 @@
 package middleware
 
 import (
-	"FiberDemo/cmd/internal/constant"
-	"FiberDemo/cmd/internal/tools/logger"
+	"{{.ProjectName}}/cmd/internal/constant"
+	"{{.ProjectName}}/cmd/internal/tools/logger"
 	"github.com/gofiber/fiber/v2"
 	"github.com/google/uuid"
 	"go.uber.org/zap"

@@ -1,9 +1,9 @@
 package handler
 
 import (
-	"FiberDemo/cmd/internal/handler/order"
-	"FiberDemo/cmd/internal/handler/user"
-	"FiberDemo/cmd/internal/middleware"
+	"{{.ProjectName}}/cmd/internal/handler/order"
+	"{{.ProjectName}}/cmd/internal/handler/user"
+	"{{.ProjectName}}/cmd/internal/middleware"
 	"github.com/gofiber/fiber/v2"
 )
 

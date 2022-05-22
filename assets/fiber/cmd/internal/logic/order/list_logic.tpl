@@ -1,7 +1,7 @@
 package order
 
 import (
-	"FiberDemo/cmd/internal/types"
+	"{{.ProjectName}}/cmd/internal/types"
 	"github.com/gofiber/fiber/v2"
 )
 

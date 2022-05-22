@@ -1,11 +1,11 @@
 package user
 
 import (
-	"FiberDemo/cmd/internal/constant"
-	"FiberDemo/cmd/internal/logic/user"
-	"FiberDemo/cmd/internal/response"
-	"FiberDemo/cmd/internal/tools/validate"
-	"FiberDemo/cmd/internal/types"
+	"{{.ProjectName}}/cmd/internal/constant"
+	"{{.ProjectName}}/cmd/internal/logic/user"
+	"{{.ProjectName}}/cmd/internal/response"
+	"{{.ProjectName}}/cmd/internal/tools/validate"
+	"{{.ProjectName}}/cmd/internal/types"
 	"github.com/gofiber/fiber/v2"
 	"github.com/pkg/errors"
 )

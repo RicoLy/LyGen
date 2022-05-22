@@ -1,8 +1,8 @@
 package global
 
 import (
-	"FiberDemo/cmd/internal/config"
-	"FiberDemo/cmd/model"
+	"{{.ProjectName}}/cmd/internal/config"
+	"{{.ProjectName}}/cmd/model"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"

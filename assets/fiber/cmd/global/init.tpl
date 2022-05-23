@@ -1,6 +1,6 @@
 package global
 
-import "{{.ProjectName}}/cmd/internal/config"
+import "{{.}}/cmd/internal/config"
 
 func Init(c *config.Config) (err error) {
 	// InitRedis(c)

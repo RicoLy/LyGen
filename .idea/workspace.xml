@@ -22,7 +22,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91185cee-a108-4be1-8d54-fb923254758f" name="Default Changelist" comment="" />
+    <list default="true" id="91185cee-a108-4be1-8d54-fb923254758f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/fiber/cmd/internal/handler/handler.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fiber/cmd/internal/logic/logic.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fiber/cmd/internal/middleware/middleware.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fiber/cmd/internal/handler/routes.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fiber/cmd/internal/handler/routes.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fiber/cmd/internal/response/response.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fiber/cmd/internal/response/response.tpl" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,7 +42,7 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" url="file:///usr/local/go" />
+  <component name="GOROOT" path="E:\Go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -62,18 +69,20 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/fiber/cmd/internal/middleware" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="F:\code\goProject\LyGen\assets\goctl" />
-      <recent name="F:\code\goProject\LyGen\assets" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\code\goProject\LyGen\assets\fiber" />
       <recent name="F:\code\goProject\LyGen\types" />
       <recent name="F:\code\goProject\LyGen\tools" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\code\goProject\LyGen\assets\fiber\cmd\internal\types" />
+      <recent name="F:\code\goProject\LyGen\assets\fiber\cmd\internal\middleware" />
+      <recent name="F:\code\goProject\LyGen\assets\fiber\cmd\internal\logic" />
+      <recent name="F:\code\goProject\LyGen\assets\fiber\cmd\internal\handler" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager">
@@ -81,9 +90,9 @@
       <module name="LyGen" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
       <package value="LyGen" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/main.go" />
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -110,5 +119,15 @@
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1034" y="470" key="#GOROOT" timestamp="1653304447263">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1034" y="470" key="#GOROOT/0.0.1920.1040@0.0.1920.1040" timestamp="1653304447263" />
+    <state x="974" y="341" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1653304987263">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="974" y="341" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1653304987263" />
   </component>
 </project>

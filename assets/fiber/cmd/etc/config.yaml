@@ -1,9 +1,9 @@
-Name: core
+Name: {{.}}
 Host: 0.0.0.0
 Port: 8888
 
 Logger:
-  Name: FiberDemo
+  Name: {{.}}
   IsDev: true
   Level: Debug
 

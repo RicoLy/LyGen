@@ -1,7 +1,7 @@
 package global
 
 import (
-	"{{.ProjectName}}/cmd/internal/config"
+	"{{.}}/cmd/internal/config"
 )
 
 

@@ -1,4 +1,4 @@
-module {{.ProjectName}}
+module {{.}}
 
 go 1.16
 

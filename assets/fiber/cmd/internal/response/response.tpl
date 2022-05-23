@@ -1,9 +1,9 @@
 package response
 
 import (
-	"{{.ProjectName}}/cmd/internal/constant"
-	"{{.ProjectName}}/cmd/internal/tools/logger"
-	"{{.ProjectName}}/cmd/internal/tools/str"
+	"{{.}}/cmd/internal/constant"
+	"{{.}}/cmd/internal/tools/logger"
+	"{{.}}/cmd/internal/tools/str"
 	"go.uber.org/zap"
 )
 

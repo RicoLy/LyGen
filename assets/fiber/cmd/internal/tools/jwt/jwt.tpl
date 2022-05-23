@@ -1,9 +1,9 @@
 package jwt
 
 import (
-	"{{.ProjectName}}/cmd/internal/config"
-	"{{.ProjectName}}/cmd/internal/tools/cypher"
-	"{{.ProjectName}}/cmd/model"
+	"{{.}}/cmd/internal/config"
+	"{{.}}/cmd/internal/tools/cypher"
+	"{{.}}/cmd/model"
 	"time"
 )
 

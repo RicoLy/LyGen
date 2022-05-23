@@ -23,12 +23,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91185cee-a108-4be1-8d54-fb923254758f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/fiber/cmd/internal/handler/handler.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fiber/cmd/internal/logic/logic.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fiber/cmd/internal/middleware/middleware.tpl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fiber/cmd/internal/handler/routes.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fiber/cmd/internal/handler/routes.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fiber/cmd/internal/response/response.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fiber/cmd/internal/response/response.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asset/asset.go" beforeDir="false" afterPath="$PROJECT_DIR$/asset/asset.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/templates/fiber/cmd/internal/handler/order/list_handler.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/templates/fiber/cmd/internal/handler/user/add_handler.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/templates/fiber/cmd/internal/handler/user/captcha_handler.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/templates/fiber/cmd/internal/handler/user/detail_handler.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/templates/fiber/cmd/internal/handler/user/login_handler.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/templates/fiber/cmd/internal/logic/order/list_logic.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/templates/fiber/cmd/internal/logic/user/add_logic.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/templates/fiber/cmd/internal/logic/user/captcha_logic.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/templates/fiber/cmd/internal/logic/user/detail_logic.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/templates/fiber/cmd/internal/logic/user/login_logic.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/constant/template.go" beforeDir="false" afterPath="$PROJECT_DIR$/constant/template.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/dbService.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/dbService.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/genService.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/genService.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,10 +78,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/fiber/cmd/internal/middleware" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/fiber/cmd/internal/types" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\code\goProject\LyGen\assets\templates" />
       <recent name="F:\code\goProject\LyGen\assets\fiber" />
       <recent name="F:\code\goProject\LyGen\types" />
       <recent name="F:\code\goProject\LyGen\tools" />

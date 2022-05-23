@@ -1,7 +1,7 @@
 package service
 
 import (
-	"LyGen/assets"
+	"LyGen/asset"
 	"LyGen/constant"
 	"LyGen/db"
 	"LyGen/tools"
@@ -118,7 +118,7 @@ func (s *DbSrv) GenerateDBEntity(req *types.EntityReq) (err error) {
 		return
 	}
 	// 加载模板文件
-	tplByte, err := assets.Asset(constant.TplEntity)
+	tplByte, err := asset.Asset(constant.TplEntity)
 	if err != nil {
 		return
 	}
@@ -243,7 +243,7 @@ func (s *DbSrv) GenerateExample(name string) {
 	file := tools.CreateDirs(constant.CustomDir + constant.GoDirModels + constant.DS) + constant.GoFileExample
 
 	// 解析模板
-	tplByte, err := assets.Asset(constant.TplExample)
+	tplByte, err := asset.Asset(constant.TplExample)
 	if err != nil {
 		return
 	}
@@ -293,7 +293,7 @@ func (s *DbSrv) GenerateSQL(info *types.SqlInfo, tableComment string) (err error
 	}
 
 	// 解析模板
-	tplByte, err := assets.Asset(constant.TplCurd)
+	tplByte, err := asset.Asset(constant.TplCurd)
 	if err != nil {
 		return
 	}

@@ -3,7 +3,6 @@ package logic
 import (
 	"LyGen/assets"
 	"LyGen/constant"
-	"LyGen/generater"
 	"LyGen/service"
 	"LyGen/tools"
 	"LyGen/types"
@@ -49,7 +48,7 @@ func (l *Logic) CreateMarkdown() (err error) {
 		i++
 	}
 	// 生成所有表的文件
-	err = generater.Gen.GenerateMarkdown(data)
+	err = service.Gen.GenerateMarkdown(data)
 	return
 }
 

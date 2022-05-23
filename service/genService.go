@@ -1,4 +1,4 @@
-package generater
+package service
 
 import (
 	"LyGen/assets"

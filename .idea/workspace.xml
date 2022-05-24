@@ -23,10 +23,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91185cee-a108-4be1-8d54-fb923254758f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/constant/regExp.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/genService_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/parseService.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/str_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/types/proto.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asset/asset.go" beforeDir="false" afterPath="$PROJECT_DIR$/asset/asset.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/templates/fiber/cmd/internal/middleware/jwt_middleware.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/fiber/cmd/internal/middleware/jwt_middleware.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/templates/fiber/cmd/internal/middleware/wrapCtx_middleware.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/fiber/cmd/internal/middleware/wrapCtx_middleware.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/commands.go" beforeDir="false" afterPath="$PROJECT_DIR$/commands/commands.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constant/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/constant/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constant/maps.go" beforeDir="false" afterPath="$PROJECT_DIR$/constant/maps.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/constant/template.go" beforeDir="false" afterPath="$PROJECT_DIR$/constant/template.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/config.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/genService.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/genService.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/str.go" beforeDir="false" afterPath="$PROJECT_DIR$/tools/str.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +96,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Go Test.TestGenerateFixedFiles in LyGen/service">
     <configuration name="go build LyGen" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="LyGen" />
       <working_directory value="$PROJECT_DIR$" />
@@ -94,8 +106,44 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
+    <configuration name="TestFindLastStr in LyGen/tools" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="LyGen" />
+      <working_directory value="$PROJECT_DIR$/tools" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="LyGen/tools" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestFindLastStr\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestGenerateFixed in LyGen/tools" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="LyGen" />
+      <working_directory value="$PROJECT_DIR$/tools" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="LyGen/tools" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestGenerateFixed\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestGenerateFixedFiles in LyGen/service" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="LyGen" />
+      <working_directory value="$PROJECT_DIR$/service" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="LyGen/service" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestGenerateFixedFiles\E$" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestGenerateFixedFiles in LyGen/service" />
+        <item itemvalue="Go Test.TestGenerateFixed in LyGen/tools" />
+        <item itemvalue="Go Test.TestFindLastStr in LyGen/tools" />
         <item itemvalue="Go Build.go build LyGen" />
       </list>
     </recent_temporary>
@@ -128,5 +176,41 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="974" y="341" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1653304987263" />
+    <state x="512" y="121" width="1200" height="798" key="DiffContextDialog" timestamp="1653366699822">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="512" y="121" width="1200" height="798" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1653366699822" />
+    <state width="1340" height="265" key="GridCell.Tab.0.bottom" timestamp="1653366599362">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1340" height="265" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1653366599362" />
+    <state width="1340" height="265" key="GridCell.Tab.0.center" timestamp="1653366599362">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1340" height="265" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1653366599362" />
+    <state width="1340" height="265" key="GridCell.Tab.0.left" timestamp="1653366599362">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1340" height="265" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1653366599362" />
+    <state width="1340" height="265" key="GridCell.Tab.0.right" timestamp="1653366599362">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1340" height="265" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1653366599362" />
+    <state width="1340" height="328" key="GridCell.Tab.1.bottom" timestamp="1653362658907">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1340" height="328" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1653362658907" />
+    <state width="1340" height="328" key="GridCell.Tab.1.center" timestamp="1653362658907">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1340" height="328" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1653362658907" />
+    <state width="1340" height="328" key="GridCell.Tab.1.left" timestamp="1653362658906">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1340" height="328" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1653362658906" />
+    <state width="1340" height="328" key="GridCell.Tab.1.right" timestamp="1653362658907">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1340" height="328" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1653362658907" />
   </component>
 </project>

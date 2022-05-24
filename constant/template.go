@@ -12,31 +12,35 @@ const (
 )
 
 const (
-	TplFiberTypes       = "assets/templates/fiber/cmd/internal/types/types.tpl"
-	TplFiberInHandler   = "assets/templates/fiber/cmd/internal/handler/handler.tpl"
-	TplFiberInHanRoutes = "assets/templates/fiber/cmd/internal/handler/routes.tpl"
-	TplFiberInLogic     = "assets/templates/fiber/cmd/internal/logic/logic.tpl"
-	TplFiberMiddleware  = "assets/templates/fiber/cmd/internal/middleware/middleware.tpl"
+	TplFiberTypes       = "assets/templates/fiber/cmd/internal/types/types.go.tpl"
+	TplFiberInHandler   = "assets/templates/fiber/cmd/internal/handler/handler.go.tpl"
+	TplFiberInHanRoutes = "assets/templates/fiber/cmd/internal/handler/routes.go.tpl"
+	TplFiberInLogic     = "assets/templates/fiber/cmd/internal/logic/logic.go.tpl"
+	TplFiberMiddleware  = "assets/templates/fiber/cmd/internal/middleware/middleware.go.tpl"
 
-	TplFiberEConfig       = "assets/templates/fiber/cmd/etc/config.yaml"
-	TplFiberGGlobal       = "assets/templates/fiber/cmd/global/global.tpl"
-	TplFiberGInit         = "assets/templates/fiber/cmd/global/init.tpl"
-	TplFiberGMysql        = "assets/templates/fiber/cmd/global/mysql.tpl"
-	TplFiberGRedis        = "assets/templates/fiber/cmd/global/redis.tpl"
-	TplFiberInConfig      = "assets/templates/fiber/cmd/internal/config/config.tpl"
-	TplFiberInConstant    = "assets/templates/fiber/cmd/internal/constant/constant.tpl"
-	TplFiberMiddleWrapCtx = "assets/templates/fiber/cmd/internal/middleware/wrapCtx_middleware.tpl"
-	TplFiberMiddleJwt     = "assets/templates/fiber/cmd/internal/middleware/jwt_middleware.tpl"
-	TplFiberResponse      = "assets/templates/fiber/cmd/internal/response/response.tpl"
-	TplFiberToolsAes      = "assets/templates/fiber/cmd/internal/tools/cypher/aes.tpl"
-	TplFiberToolsMd5      = "assets/templates/fiber/cmd/internal/tools/cypher/md5.tpl"
-	TplFiberToolsJwt      = "assets/templates/fiber/cmd/internal/tools/jwt/jwt.tpl"
-	TplFiberToolsLogTool  = "assets/templates/fiber/cmd/internal/tools/logger/log_tool.tpl"
-	TplFiberToolsLogger   = "assets/templates/fiber/cmd/internal/tools/logger/logger.tpl"
-	TplFiberToolsStr      = "assets/templates/fiber/cmd/internal/tools/str/str.tpl"
-	TplFiberToolsValidate = "assets/templates/fiber/cmd/internal/tools/validate/validate.tpl"
-	TplFiberModelBase     = "assets/templates/fiber/cmd/model/base.tpl"
-	TplFiberModelUser     = "assets/templates/fiber/cmd/model/user.tpl"
+	TplFiberEConfig       = "assets/templates/fiber/cmd/etc/config.yaml.tpl"
+	TplFiberGGlobal       = "assets/templates/fiber/cmd/global/global.go.tpl"
+	TplFiberGInit         = "assets/templates/fiber/cmd/global/init.go.tpl"
+	TplFiberGMysql        = "assets/templates/fiber/cmd/global/mysql.go.tpl"
+	TplFiberGRedis        = "assets/templates/fiber/cmd/global/redis.go.tpl"
+	TplFiberInConfig      = "assets/templates/fiber/cmd/internal/config/config.go.tpl"
+	TplFiberInConstant    = "assets/templates/fiber/cmd/internal/constant/constant.go.tpl"
+	TplFiberMiddleWrapCtx = "assets/templates/fiber/cmd/internal/middleware/wrapCtx_middleware.go.tpl"
+	TplFiberMiddleJwt     = "assets/templates/fiber/cmd/internal/middleware/jwt_middleware.go.tpl"
+	TplFiberResponse      = "assets/templates/fiber/cmd/internal/response/response.go.tpl"
+	TplFiberToolsAes      = "assets/templates/fiber/cmd/internal/tools/cypher/aes.go.tpl"
+	TplFiberToolsMd5      = "assets/templates/fiber/cmd/internal/tools/cypher/md5.go.tpl"
+	TplFiberToolsJwt      = "assets/templates/fiber/cmd/internal/tools/jwt/jwt.go.tpl"
+	TplFiberToolsLogTool  = "assets/templates/fiber/cmd/internal/tools/logger/log_tool.go.tpl"
+	TplFiberToolsLogger   = "assets/templates/fiber/cmd/internal/tools/logger/logger.go.tpl"
+	TplFiberToolsStr      = "assets/templates/fiber/cmd/internal/tools/str/str.go.tpl"
+	TplFiberToolsValidate = "assets/templates/fiber/cmd/internal/tools/validate/validate.go.tpl"
+	TplFiberModelBase     = "assets/templates/fiber/cmd/model/base.go.tpl"
+	TplFiberModelUser     = "assets/templates/fiber/cmd/model/user.go.tpl"
+	TplFiberCore          = "assets/templates/fiber/cmd/core.go.tpl"
+	TplFiberGoMod         = "assets/templates/fiber/go.mod.tpl"
+
+	TplFiberPrefix = "assets/templates/fiber"
 )
 
 var TplFixedList = []string{
@@ -59,4 +63,6 @@ var TplFixedList = []string{
 	TplFiberToolsValidate,
 	TplFiberModelBase,
 	TplFiberModelUser,
+	TplFiberCore,
+	TplFiberGoMod,
 }

@@ -7,6 +7,7 @@ import (
 	"LyGen/types"
 	"bytes"
 	"fmt"
+	"strings"
 	"text/template"
 	"time"
 )
@@ -46,6 +47,19 @@ func (g *Generator) GenerateFiles(temp string, data interface{}, path string) (e
 	_, err = tools.WriteFile(path, content.String())
 	if err != nil {
 		return
+	}
+	return
+}
+
+// 生成fiber固定文件模板
+func (g Generator) GenerateFixedFiles() (err error) {
+	for _, tpl := range constant.TplFixedList {
+		pos := strings.ReplaceAll(tpl, constant.TplFiberPrefix, constant.CustomDir)
+		dir, _ := tools.SeparateByLastStr(pos, "/")
+		_ = tools.CreateDir(dir)
+		if err = g.GenerateFiles(tpl, constant.Project, strings.TrimRight(pos, ".tpl")); err != nil {
+			return
+		}
 	}
 	return
 }

@@ -60,6 +60,7 @@ func (c *Commands) customDir(_ ...string) int {
 		path, err := tools.GenerateDir(string(line))
 		if err == nil {
 			constant.CustomDir = path
+			constant.Project = tools.FindLastStr(path, constant.DS)
 			fmt.Println("Directory success:", path)
 		} else {
 			log.Println("Set directory failed>>", err)

@@ -125,3 +125,30 @@ func WriteFile(filename string, data string) (count int, err error) {
 func AddQuote(str string) string {
 	return "`" + str + "`"
 }
+
+func FindTopStr(str string, sep string) string {
+	index := strings.Index(str, sep)
+	if index == -1 {
+		return str
+	} else {
+		return str[:index]
+	}
+}
+
+func FindLastStr(str string, sep string) string {
+	index := strings.LastIndex(str, sep)
+	if index == -1 {
+		return str
+	} else {
+		return str[index+1:]
+	}
+}
+
+func SeparateByLastStr(str string, sep string) (prefix, suffix string) {
+	index := strings.LastIndex(str, sep)
+	if index == -1 {
+		return str, ""
+	} else {
+		return str[:index], str[index+1:]
+	}
+}

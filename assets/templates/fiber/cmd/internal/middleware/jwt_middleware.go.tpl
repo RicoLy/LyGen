@@ -2,7 +2,7 @@ package middleware
 
 import (
 	"{{.}}/cmd/internal/constant"
-	jwt2 "{{.ProjectName}}/cmd/internal/tools/jwt"
+	jwt2 "{{.}}/cmd/internal/tools/jwt"
 	"github.com/gofiber/fiber/v2"
 	"github.com/pkg/errors"
 	"time"

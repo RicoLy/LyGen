@@ -40,7 +40,7 @@ const (
 	TplFiberCore          = "assets/templates/fiber/cmd/core.go.tpl"
 	TplFiberGoMod         = "assets/templates/fiber/go.mod.tpl"
 
-	TplFiberPrefix = "assets/templates/fiber"
+	TplFiberPrefix = "assets/templates/fiber/"
 )
 
 var TplFixedList = []string{

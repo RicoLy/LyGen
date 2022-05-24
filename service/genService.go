@@ -25,15 +25,20 @@ func (g *Generator) GenerateMarkdown(data *types.MarkDownData) (err error) {
 	return g.GenerateFiles(constant.TplMarkdown, data, file)
 }
 
-
 // 根据模板生成文件
 func (g *Generator) GenerateFiles(temp string, data interface{}, path string) (err error) {
-
+	if tools.IsDirOrFileExist(path) {
+		return
+	}
 	tplByte, err := asset.Asset(temp)
 	if err != nil {
 		return
 	}
-	tpl, err := template.New("tpl").Parse(string(tplByte))
+	tpl, err := template.New("tpl").Funcs(map[string]interface{}{
+		"Title": func(s string) string {
+			return strings.Title(s)
+		},
+	}).Parse(string(tplByte))
 	if err != nil {
 		return
 	}
@@ -53,11 +58,14 @@ func (g *Generator) GenerateFiles(temp string, data interface{}, path string) (e
 
 // 生成fiber固定文件模板
 func (g Generator) GenerateFixedFiles() (err error) {
+	fmt.Println("GenerateFixedFiles|constant.Project", constant.Project)
 	for _, tpl := range constant.TplFixedList {
 		pos := strings.ReplaceAll(tpl, constant.TplFiberPrefix, constant.CustomDir)
 		dir, _ := tools.SeparateByLastStr(pos, "/")
-		_ = tools.CreateDir(dir)
-		if err = g.GenerateFiles(tpl, constant.Project, strings.TrimRight(pos, ".tpl")); err != nil {
+		if tpl != constant.TplFiberGoMod {
+			_ = tools.CreateDir(dir)
+		}
+		if err = g.GenerateFiles(tpl, constant.Project, tools.FindTopStr(pos, ".tpl")); err != nil {
 			return
 		}
 	}

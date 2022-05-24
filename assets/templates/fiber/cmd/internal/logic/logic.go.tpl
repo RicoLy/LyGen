@@ -1,4 +1,4 @@
-package user
+package {{.Group}}
 
 import (
 	"{{.Mata}}/cmd/internal/types"

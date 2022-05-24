@@ -39,7 +39,7 @@ func (p *ParseService)ParseElementInfos(elementStr string) []*types.ElementInfo 
 	for _, result := range results {
 		element := new(types.ElementInfo)
 		element.Meta = result[0]
-		element.Tags = result[1]
+		element.Tags = strings.TrimSpace(result[1])
 		typeNames := strings.Split(strings.Trim(result[2], " "), " ")
 		if len(typeNames) == 3 && typeNames[0] == "repeated" {
 			element.Type = fmt.Sprintf("[]*%s", typeNames[1])

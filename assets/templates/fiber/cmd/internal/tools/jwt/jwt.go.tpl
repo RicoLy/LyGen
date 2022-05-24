@@ -4,6 +4,7 @@ import (
 	"{{.}}/cmd/internal/config"
 	"{{.}}/cmd/internal/tools/cypher"
 	"{{.}}/cmd/model"
+	"github.com/dgrijalva/jwt-go"
 	"time"
 )
 

@@ -1,7 +1,7 @@
 package logic
 
 import (
-	"LyGen/assets"
+	"LyGen/asset"
 	"LyGen/constant"
 	"LyGen/service"
 	"LyGen/tools"
@@ -9,6 +9,7 @@ import (
 	"bytes"
 	"fmt"
 	"log"
+	"strings"
 	"text/template"
 )
 
@@ -156,7 +157,7 @@ func (l *Logic) GenerateError() (err error) {
 		log.Println(file + "It already exists. Please delete it and regenerate it")
 		return
 	}
-	tplByte, err := assets.Asset(constant.TplError)
+	tplByte, err := asset.Asset(constant.TplError)
 	if err != nil {
 		return
 	}
@@ -193,7 +194,7 @@ func (l *Logic) GenerateInit() (err error) {
 		log.Println(file + "It already exists. Please delete it and regenerate it")
 		return
 	}
-	tplByte, err := assets.Asset(constant.TplInit)
+	tplByte, err := asset.Asset(constant.TplInit)
 	if err != nil {
 		return
 	}
@@ -227,7 +228,7 @@ func (l *Logic) GenerateTableList(list []*types.TableList) (err error) {
 		log.Println(file + "It already exists. Please delete it and regenerate it")
 		return
 	}
-	tplByte, err := assets.Asset(constant.TplTables)
+	tplByte, err := asset.Asset(constant.TplTables)
 	if err != nil {
 		return
 	}
@@ -260,4 +261,87 @@ func (l *Logic) GetConfigDir() string {
 // GetMysqlDir 创建和获取MYSQL目录
 func (l *Logic) GetMysqlDir() string {
 	return tools.CreateDirs(constant.CustomDir + constant.GoDirModels + constant.DS)
+}
+
+// 生成fiber项目
+func (l Logic) GenerateFiberProject() (err error) {
+	protoContent := tools.ReadFile(constant.ProtoPath)
+	services := service.ParseSrv.ParseServices(protoContent)
+	messages := service.ParseSrv.ParseMessages(protoContent)
+	middleWares := make(map[string]bool, 0)
+	fmt.Println("GenerateFiberProject|constant.Project", constant.Project)
+	for _, srv := range services {
+		srv.Meta = constant.Project
+		for _, method := range srv.Methods {
+			method.Mata = constant.Project
+			for _, ware := range method.MiddleWares {
+				if !constant.GMiddleware[ware] {
+					middleWares[ware] = true
+				}
+			}
+			// 生成handler
+			pos := l.MakeHandlerAndLogicPos(constant.TplFiberInHandler, method.Group, method.Name)
+			if err = l.GenerateFiberTpl(constant.TplFiberInHandler, method, pos); err != nil {
+				return
+			}
+			// 生成Logic
+			pos = l.MakeHandlerAndLogicPos(constant.TplFiberInLogic, method.Group, method.Name)
+			if err = l.GenerateFiberTpl(constant.TplFiberInLogic, method, pos); err != nil {
+				return
+			}
+		}
+	}
+	// 生成types
+	if err = l.GenerateFiberTpl(constant.TplFiberTypes, messages, ""); err != nil {
+		return
+	}
+
+	// 生成routes
+	project := &types.Project{
+		Services: services,
+		Name:     constant.Project,
+	}
+	if err = l.GenerateFiberTpl(constant.TplFiberInHanRoutes, project, ""); err != nil {
+		return
+	}
+
+	// 生成middleware
+	for middleWare, _ := range middleWares {
+		middle := make(map[string]string)
+		middle["Mata"] = constant.Project
+		middle["Name"] = middleWare
+		pos := strings.ReplaceAll(constant.TplFiberMiddleware, constant.TplFiberPrefix, constant.CustomDir)
+		dir, fileName := tools.SeparateByLastStr(pos, "/")
+		fileName = middleWare + "_" + fileName
+		pos = dir + "/" + fileName
+		if err = l.GenerateFiberTpl(constant.TplFiberMiddleware, middle, pos); err != nil {
+			return
+		}
+	}
+	if err = service.Gen.GenerateFixedFiles(); err != nil {
+		return
+	}
+	return
+}
+
+// GenerateFiberTpl 根据指定fiber模板渲染
+func (l *Logic) GenerateFiberTpl(tpl string, data interface{}, pos string) (err error) {
+	if pos == "" {
+		pos = strings.ReplaceAll(tpl, constant.TplFiberPrefix, constant.CustomDir)
+	}
+	dir, _ := tools.SeparateByLastStr(pos, "/")
+	_ = tools.CreateDir(dir)
+
+	return service.Gen.GenerateFiles(tpl, data, tools.FindTopStr(pos, ".tpl"))
+}
+
+// MakeHandlerAndLogicPos 根据指定fiberHandlerLogic模板渲染
+func (l *Logic) MakeHandlerAndLogicPos(tpl, group, name string) (pos string) {
+	pos = strings.ReplaceAll(tpl, constant.TplFiberPrefix, constant.CustomDir)
+	dir, fileName := tools.SeparateByLastStr(pos, "/")
+	dir = dir + "/" + group
+	fileName = name + "_" + fileName
+	pos = dir + "/" + fileName
+
+	return
 }

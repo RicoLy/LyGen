@@ -3,9 +3,6 @@ package tools
 import (
 	"bytes"
 	"fmt"
-	"io"
-	"io/ioutil"
-	"os"
 	"regexp"
 	"strings"
 )
@@ -84,48 +81,12 @@ func CheckCharDoSpecial(s string, char byte, regs string) string {
 	return strings.Join(result, string(char))
 }
 
-// CheckFileContainsChar 检查某字符是否存在文件里
-func CheckFileContainsChar(filename, s string) bool {
-	data := ReadFile(filename)
-	if len(data) > 0 {
-		return strings.LastIndex(data, s) > 0
-	}
-	return false
-}
-
-//读取文件内容
-func ReadFile(filename string) string {
-	data, err := ioutil.ReadFile(filename)
-	if err != nil {
-		return ""
-	}
-	return string(data)
-}
-
-// WriteFile 写文件
-func WriteFile(filename string, data string) (count int, err error) {
-	var f *os.File
-	if IsDirOrFileExist(filename) == false {
-		f, err = os.Create(filename)
-		if err != nil {
-			return
-		}
-	} else {
-		f, err = os.OpenFile(filename, os.O_CREATE|os.O_WRONLY, 0666)
-	}
-	defer f.Close()
-	count, err = io.WriteString(f, data)
-	if err != nil {
-		return
-	}
-	return
-}
-
 // AddQuote 添加``符号
 func AddQuote(str string) string {
 	return "`" + str + "`"
 }
 
+// FindTopStr
 func FindTopStr(str string, sep string) string {
 	index := strings.Index(str, sep)
 	if index == -1 {
@@ -135,6 +96,7 @@ func FindTopStr(str string, sep string) string {
 	}
 }
 
+// FindLastStr
 func FindLastStr(str string, sep string) string {
 	index := strings.LastIndex(str, sep)
 	if index == -1 {
@@ -144,6 +106,7 @@ func FindLastStr(str string, sep string) string {
 	}
 }
 
+// SeparateByLastStr
 func SeparateByLastStr(str string, sep string) (prefix, suffix string) {
 	index := strings.LastIndex(str, sep)
 	if index == -1 {

@@ -49,6 +49,7 @@ var (
 	MysqlDataSource = ""
 	CustomDir       = ""
 	Project         = ""
+	ProtoPath       = ""
 )
 
 var (

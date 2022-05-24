@@ -4,6 +4,7 @@ import (
 	"{{.}}/cmd/internal/constant"
 	"{{.}}/cmd/internal/tools/logger"
 	"{{.}}/cmd/internal/tools/str"
+	"github.com/gofiber/fiber/v2"
 	"go.uber.org/zap"
 )
 

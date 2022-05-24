@@ -40,3 +40,9 @@ type Service struct {
 	Prefix  string    // 路由前缀
 	Methods []*Method // 方法
 }
+
+// 项目
+type Project struct {
+	Services []*Service
+	Name     string
+}

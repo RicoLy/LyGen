@@ -43,16 +43,18 @@ func (c Commands) Start() error {
 
 func (c *Commands) Handlers() map[string]func(args ...string) int {
 	return map[string]func(args ...string) int{
-		"0":  c.customDir,
-		"1":  c.markDown,
-		"2":  c.GenerateEntry,
-		"3":  c.GenerateCURD,
-		"cl": c.Clean,
-		"q":  c.Quit,
-		"h":  c.Help,
+		"0":     c.customDir,
+		"1":     c.markDown,
+		"2":     c.GenerateEntry,
+		"3":     c.GenerateCURD,
+		"fiber": c.GenerateFiberProject,
+		"cl":    c.Clean,
+		"q":     c.Quit,
+		"h":     c.Help,
 	}
 }
 
+// customDir 设置文件生成目录
 func (c *Commands) customDir(_ ...string) int {
 	fmt.Print("Please set the build directory>")
 	line, _, _ := bufio.NewReader(os.Stdin).ReadLine()
@@ -60,12 +62,28 @@ func (c *Commands) customDir(_ ...string) int {
 		path, err := tools.GenerateDir(string(line))
 		if err == nil {
 			constant.CustomDir = path
+			path = strings.TrimRight(path, constant.DS)
 			constant.Project = tools.FindLastStr(path, constant.DS)
 			fmt.Println("Directory success:", path)
 		} else {
 			log.Println("Set directory failed>>", err)
 		}
 	}
+	return 0
+}
+
+// customProtoPath 设置proto文件路径
+func (c *Commands) customProtoPath(_ ...string) int {
+	fmt.Print("Please set the proto file path>")
+	for  {
+		line, _, _ := bufio.NewReader(os.Stdin).ReadLine()
+		if string(line) != "" {
+			constant.ProtoPath = string(line)
+			break
+		}
+		fmt.Print("Proto file path is null please reset>")
+	}
+
 	return 0
 }
 
@@ -135,6 +153,18 @@ func (c *Commands) GenerateCURD(_ ...string) int {
 	return 0
 }
 
+// GenerateFiberProject 生成fiber项目
+func (c *Commands) GenerateFiberProject(_ ...string) int {
+	c.customDir()
+	c.customProtoPath()
+	fmt.Println("GenerateFiberProject|constant.Project", constant.Project)
+	if err := logic.Lg.GenerateFiberProject(); err != nil {
+		log.Println("GenerateFiberProject>>", err.Error())
+	}
+	go tools.Gofmt(constant.CustomDir)
+	return 0
+}
+
 // _setFormat set struct format
 func (c *Commands) _setFormat() []string {
 	fmt.Print("Do you need to set the format of the structure?(Yes|No)>")
@@ -191,5 +221,3 @@ func (c *Commands) Clean(_ ...string) int {
 	tools.Clean()
 	return 0
 }
-
-

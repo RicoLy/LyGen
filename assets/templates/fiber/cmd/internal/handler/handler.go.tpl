@@ -1,13 +1,13 @@
-package user
+package {{.Group}}
 
 import (
-	"{{.Mata}}/cmd/internal/constant"
-	"{{.Mata}}/cmd/internal/logic/user"
+	{{if ne .Request "CommReq"}}"{{.Mata}}/cmd/internal/constant"
+    "{{.Mata}}/cmd/internal/tools/validate"
+    "{{.Mata}}/cmd/internal/types"
+    "github.com/pkg/errors"{{end}}
+	"{{.Mata}}/cmd/internal/logic/{{.Group}}"
 	"{{.Mata}}/cmd/internal/response"
-	"{{.Mata}}/cmd/internal/tools/validate"
-	"{{.Mata}}/cmd/internal/types"
 	"github.com/gofiber/fiber/v2"
-	"github.com/pkg/errors"
 )
 
 // {{.Name}}Handler {{.Comment}}
@@ -36,7 +36,7 @@ func {{.Name}}Handler(c *fiber.Ctx) (err error) {
         )
     }
     {{end}}
-	{{if ne .Response "CommRsp"}}rsp, {{end}}err = {{.Group}}.{{.Name}}Logic(c{{if ne .Request "CommReq"}}, req{{end}})
+	{{if ne .Response "CommRsp"}}rsp, err := {{else}}err ={{end}}{{.Group}}.{{.Name}}Logic(c{{if ne .Request "CommReq"}}, req{{end}})
 	{{if ne .Response "CommRsp"}}if err != nil {
         return response.Response(c, nil, err)
     }

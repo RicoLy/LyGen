@@ -23,22 +23,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91185cee-a108-4be1-8d54-fb923254758f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/constant/regExp.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/genService_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/parseService.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/str_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/types/proto.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Demo/fiber_demo.proto" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/asset/asset.go" beforeDir="false" afterPath="$PROJECT_DIR$/asset/asset.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/templates/fiber/cmd/internal/middleware/jwt_middleware.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/fiber/cmd/internal/middleware/jwt_middleware.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/templates/fiber/cmd/global/redis.go.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/fiber/cmd/global/redis.go.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/templates/fiber/cmd/internal/handler/handler.go.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/fiber/cmd/internal/handler/handler.go.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/templates/fiber/cmd/internal/handler/routes.go.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/fiber/cmd/internal/handler/routes.go.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/templates/fiber/cmd/internal/logic/logic.go.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/fiber/cmd/internal/logic/logic.go.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/templates/fiber/cmd/internal/response/response.go.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/fiber/cmd/internal/response/response.go.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/templates/fiber/cmd/internal/tools/jwt/jwt.go.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/fiber/cmd/internal/tools/jwt/jwt.go.tpl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/commands/commands.go" beforeDir="false" afterPath="$PROJECT_DIR$/commands/commands.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/constant/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/constant/config.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/constant/maps.go" beforeDir="false" afterPath="$PROJECT_DIR$/constant/maps.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/constant/template.go" beforeDir="false" afterPath="$PROJECT_DIR$/constant/template.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/config.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logic/logic.go" beforeDir="false" afterPath="$PROJECT_DIR$/logic/logic.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/genService.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/genService.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/parseService.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/parseService.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/file.go" beforeDir="false" afterPath="$PROJECT_DIR$/tools/file.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tools/str.go" beforeDir="false" afterPath="$PROJECT_DIR$/tools/str.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/str_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/tools/str_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/tools.go" beforeDir="false" afterPath="$PROJECT_DIR$/tools/tools.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/types/proto.go" beforeDir="false" afterPath="$PROJECT_DIR$/types/proto.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,24 +84,33 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Demo" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\code\goProject\LyGen\Demo" />
+      <recent name="F:\code\goProject\LyGen\assets\fiber\cmd\internal\types" />
+      <recent name="F:\code\goProject\LyGen\assets\fiber\cmd\internal\middleware" />
+      <recent name="F:\code\goProject\LyGen\assets\fiber\cmd\internal\logic" />
+      <recent name="F:\code\goProject\LyGen\assets\fiber\cmd\internal\handler" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\code\goProject\LyGen\assets\templates" />
       <recent name="F:\code\goProject\LyGen\assets\fiber" />
       <recent name="F:\code\goProject\LyGen\types" />
       <recent name="F:\code\goProject\LyGen\tools" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\code\goProject\LyGen\assets\fiber\cmd\internal\types" />
-      <recent name="F:\code\goProject\LyGen\assets\fiber\cmd\internal\middleware" />
-      <recent name="F:\code\goProject\LyGen\assets\fiber\cmd\internal\logic" />
-      <recent name="F:\code\goProject\LyGen\assets\fiber\cmd\internal\handler" />
-      <recent name="$PROJECT_DIR$" />
-    </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestGenerateFixedFiles in LyGen/service">
+  <component name="RunManager" selected="Go Build.go build LyGen">
+    <configuration name="go build Demo/cmd" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="LyGen" />
+      <working_directory value="$PROJECT_DIR$/Demo" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/Demo/cmd/core.go" />
+      <package value="Demo/cmd" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build LyGen" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="LyGen" />
       <working_directory value="$PROJECT_DIR$" />
@@ -106,7 +120,7 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestFindLastStr in LyGen/tools" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestCheckExist in LyGen/tools" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="LyGen" />
       <working_directory value="$PROJECT_DIR$/tools" />
       <framework value="gotest" />
@@ -114,10 +128,10 @@
       <package value="LyGen/tools" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestFindLastStr\E$" />
+      <pattern value="^\QTestCheckExist\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestGenerateFixed in LyGen/tools" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestFindLastStr2 in LyGen/tools (1)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="LyGen" />
       <working_directory value="$PROJECT_DIR$/tools" />
       <framework value="gotest" />
@@ -125,26 +139,27 @@
       <package value="LyGen/tools" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestGenerateFixed\E$" />
+      <pattern value="^\QTestFindLastStr2\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestGenerateFixedFiles in LyGen/service" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestFindLastStr2 in LyGen/tools" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="LyGen" />
-      <working_directory value="$PROJECT_DIR$/service" />
+      <working_directory value="$PROJECT_DIR$/tools" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="LyGen/service" />
+      <package value="LyGen/tools" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestGenerateFixedFiles\E$" />
+      <pattern value="^\QTestFindLastStr2\E$" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.TestGenerateFixedFiles in LyGen/service" />
-        <item itemvalue="Go Test.TestGenerateFixed in LyGen/tools" />
-        <item itemvalue="Go Test.TestFindLastStr in LyGen/tools" />
         <item itemvalue="Go Build.go build LyGen" />
+        <item itemvalue="Go Test.TestFindLastStr2 in LyGen/tools (1)" />
+        <item itemvalue="Go Build.go build Demo/cmd" />
+        <item itemvalue="Go Test.TestFindLastStr2 in LyGen/tools" />
+        <item itemvalue="Go Test.TestCheckExist in LyGen/tools" />
       </list>
     </recent_temporary>
   </component>
@@ -180,37 +195,45 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="512" y="121" width="1200" height="798" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1653366699822" />
-    <state width="1340" height="265" key="GridCell.Tab.0.bottom" timestamp="1653366599362">
+    <state width="1340" height="265" key="GridCell.Tab.0.bottom" timestamp="1653394004652">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="265" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1653366599362" />
-    <state width="1340" height="265" key="GridCell.Tab.0.center" timestamp="1653366599362">
+    <state width="1340" height="265" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1653394004652" />
+    <state width="1340" height="265" key="GridCell.Tab.0.center" timestamp="1653394004652">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="265" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1653366599362" />
-    <state width="1340" height="265" key="GridCell.Tab.0.left" timestamp="1653366599362">
+    <state width="1340" height="265" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1653394004652" />
+    <state width="1340" height="265" key="GridCell.Tab.0.left" timestamp="1653394004652">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="265" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1653366599362" />
-    <state width="1340" height="265" key="GridCell.Tab.0.right" timestamp="1653366599362">
+    <state width="1340" height="265" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1653394004652" />
+    <state width="1340" height="265" key="GridCell.Tab.0.right" timestamp="1653394004652">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="265" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1653366599362" />
-    <state width="1340" height="328" key="GridCell.Tab.1.bottom" timestamp="1653362658907">
+    <state width="1340" height="265" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1653394004652" />
+    <state width="1340" height="328" key="GridCell.Tab.1.bottom" timestamp="1653388296069">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="328" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1653362658907" />
-    <state width="1340" height="328" key="GridCell.Tab.1.center" timestamp="1653362658907">
+    <state width="1340" height="328" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1653388296069" />
+    <state width="1340" height="328" key="GridCell.Tab.1.center" timestamp="1653388296069">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="328" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1653362658907" />
-    <state width="1340" height="328" key="GridCell.Tab.1.left" timestamp="1653362658906">
+    <state width="1340" height="328" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1653388296069" />
+    <state width="1340" height="328" key="GridCell.Tab.1.left" timestamp="1653388296069">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="328" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1653362658906" />
-    <state width="1340" height="328" key="GridCell.Tab.1.right" timestamp="1653362658907">
+    <state width="1340" height="328" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1653388296069" />
+    <state width="1340" height="328" key="GridCell.Tab.1.right" timestamp="1653388296069">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="328" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1653362658907" />
+    <state width="1340" height="328" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1653388296069" />
+    <state x="929" y="221" key="RollbackChangesDialog" timestamp="1653367772694">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="929" y="221" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1653367772694" />
+    <state x="961" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1653379074491">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="961" y="239" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1653379074491" />
   </component>
 </project>

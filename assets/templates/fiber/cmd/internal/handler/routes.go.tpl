@@ -1,8 +1,8 @@
 package handler
 
 import (
-	"{{.Name}}/cmd/internal/handler/order"
-	"{{.Name}}/cmd/internal/handler/user"
+    {{range .Services}}
+    "{{.Meta}}/cmd/internal/handler/{{.Group}}"{{end}}
 	"{{.Name}}/cmd/internal/middleware"
 	"github.com/gofiber/fiber/v2"
 )
@@ -10,9 +10,9 @@ import (
 func RegisterHandlers(app *fiber.App) {
     {{range .Services}}{{$name := .Name}}
     // {{$name}}Group {{.Comment}}
-    {{$name}}Group := app.Group("{{.Group}}")
+    {{$name}}Group := app.Group("{{.Prefix}}")
     {
         {{range .Methods}}
-        {{$name}}Group.{{.MethodType}}("{{.Path}}",{{range .MiddleWares}} middleware.{{.|Title}}Middleware(),{{end}} {{.Group}}.CaptchaHandler){{end}}
+        {{$name}}Group.{{.MethodType|Title}}("{{.Path}}",{{range .MiddleWares}} middleware.{{.|Title}}Middleware(), {{end}} {{.Group}}.{{.Name}}Handler){{end}}
     }{{end}}
 }

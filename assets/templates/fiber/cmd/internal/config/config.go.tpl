@@ -12,6 +12,9 @@ var GlobalConfig = &Config{
 
 type Config struct {
 	Viper  *viper.Viper
+	Name string
+    Host string
+    Port string
 	Logger struct {
 		Name  string
 		IsDev bool

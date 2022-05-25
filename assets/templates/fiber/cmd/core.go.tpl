@@ -7,6 +7,7 @@ import (
 	"{{.}}/cmd/internal/middleware"
 	"{{.}}/cmd/internal/tools/logger"
 	"flag"
+	"fmt"
 	"github.com/gofiber/fiber/v2"
 )
 
@@ -32,5 +33,5 @@ func main() {
 	app.Use(middleware.WrapCtxMiddleware())
 	handler.RegisterHandlers(app)
 
-	_ = app.Listen(":3000")
+	_ = app.Listen(fmt.Sprintf("%s:%s", config.GlobalConfig.Host, config.GlobalConfig.Port))
 }

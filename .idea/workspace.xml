@@ -24,12 +24,9 @@
   <component name="ChangeListManager">
     <list default="true" id="91185cee-a108-4be1-8d54-fb923254758f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Demo/fiber_demo.proto" beforeDir="false" afterPath="$PROJECT_DIR$/Demo/fiber_demo.proto" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/asset/asset.go" beforeDir="false" afterPath="$PROJECT_DIR$/asset/asset.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/templates/fiber/cmd/internal/handler/handler.go.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/fiber/cmd/internal/handler/handler.go.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/templates/fiber/cmd/internal/handler/routes.go.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/fiber/cmd/internal/handler/routes.go.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constant/maps.go" beforeDir="false" afterPath="$PROJECT_DIR$/constant/maps.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/genService.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/genService.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/templates/fiber/cmd/core.go.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/fiber/cmd/core.go.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/templates/fiber/cmd/internal/config/config.go.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/fiber/cmd/internal/config/config.go.tpl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,22 +178,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="512" y="121" width="1200" height="798" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1653366699822" />
-    <state width="1340" height="265" key="GridCell.Tab.0.bottom" timestamp="1653451062501">
+    <state width="1340" height="265" key="GridCell.Tab.0.bottom" timestamp="1653469126871">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="265" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1653451062501" />
-    <state width="1340" height="265" key="GridCell.Tab.0.center" timestamp="1653451062500">
+    <state width="1340" height="265" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1653469126871" />
+    <state width="1340" height="265" key="GridCell.Tab.0.center" timestamp="1653469126871">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="265" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1653451062500" />
-    <state width="1340" height="265" key="GridCell.Tab.0.left" timestamp="1653451062500">
+    <state width="1340" height="265" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1653469126871" />
+    <state width="1340" height="265" key="GridCell.Tab.0.left" timestamp="1653469126871">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="265" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1653451062500" />
-    <state width="1340" height="265" key="GridCell.Tab.0.right" timestamp="1653451062500">
+    <state width="1340" height="265" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1653469126871" />
+    <state width="1340" height="265" key="GridCell.Tab.0.right" timestamp="1653469126871">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="265" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1653451062500" />
+    <state width="1340" height="265" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1653469126871" />
     <state width="1340" height="328" key="GridCell.Tab.1.bottom" timestamp="1653388296069">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

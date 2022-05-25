@@ -10,9 +10,9 @@ import (
 func RegisterHandlers(app *fiber.App) {
     {{range .Services}}{{$name := .Name}}
     // {{$name}}Group {{.Comment}}
-    {{$name}}Group := app.Group("{{.Prefix}}")
+    {{$name|LeftLower}}Group := app.Group("{{.Prefix}}")
     {
         {{range .Methods}}
-        {{$name}}Group.{{.MethodType|Title}}("{{.Path}}",{{range .MiddleWares}} middleware.{{.|Title}}Middleware(), {{end}} {{.Group}}.{{.Name}}Handler){{end}}
+        {{$name|LeftLower}}Group.{{.MethodType|LeftUpper}}("{{.Path}}",{{range .MiddleWares}} middleware.{{.|LeftUpper}}Middleware(), {{end}} {{.Group}}.{{.Name}}Handler){{end}}
     }{{end}}
 }

@@ -88,6 +88,6 @@ var ProtoTypeToGoType = map[string]string{
 }
 
 var GMiddleware = map[string]bool{
-	"jwt": true,
+	"Jwt": true,
 	"wrapCtx": true,
 }

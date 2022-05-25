@@ -35,8 +35,17 @@ func (g *Generator) GenerateFiles(temp string, data interface{}, path string) (e
 		return
 	}
 	tpl, err := template.New("tpl").Funcs(map[string]interface{}{
-		"Title": func(s string) string {
-			return strings.Title(s)
+		"LeftUpper": func(s string) string {
+			if len(s) > 0{
+				return strings.ToUpper(string(s[0])) + s[1:]
+			}
+			return s
+		},
+		"LeftLower": func(s string) string {
+			if len(s) > 0 {
+				return strings.ToLower(string(s[0])) + s[1:]
+			}
+			return s
 		},
 	}).Parse(string(tplByte))
 	if err != nil {

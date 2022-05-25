@@ -14,7 +14,7 @@ import (
 func {{.Name}}Handler(c *fiber.Ctx) (err error) {
     {{if ne .Request "CommReq"}}
     req := new(types.{{.Request}})
-    {{if len .PathParams}}{{range .PathParams}}req.{{.|Title}} = c.Params("{{.}}")
+    {{if len .PathParams}}{{range .PathParams}}req.{{.|LeftUpper}} = c.Params("{{.}}")
     {{end}}{{else if ne .MethodType "post"}}
     if err = c.QueryParser(req); err != nil {
         return response.Response(

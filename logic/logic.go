@@ -312,7 +312,7 @@ func (l Logic) GenerateFiberProject() (err error) {
 		middle["Name"] = middleWare
 		pos := strings.ReplaceAll(constant.TplFiberMiddleware, constant.TplFiberPrefix, constant.CustomDir)
 		dir, fileName := tools.SeparateByLastStr(pos, "/")
-		fileName = middleWare + "_" + fileName
+		fileName = tools.LeftLower(middleWare) + "_" + fileName
 		pos = dir + "/" + fileName
 		if err = l.GenerateFiberTpl(constant.TplFiberMiddleware, middle, pos); err != nil {
 			return
@@ -339,7 +339,7 @@ func (l *Logic) GenerateFiberTpl(tpl string, data interface{}, pos string) (err 
 func (l *Logic) MakeHandlerAndLogicPos(tpl, group, name string) (pos string) {
 	pos = strings.ReplaceAll(tpl, constant.TplFiberPrefix, constant.CustomDir)
 	dir, fileName := tools.SeparateByLastStr(pos, "/")
-	dir = dir + "/" + group
+	dir = dir + "/" + tools.LeftLower(group)
 	fileName = name + "_" + fileName
 	pos = dir + "/" + fileName
 

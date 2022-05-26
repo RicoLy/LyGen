@@ -115,3 +115,11 @@ func SeparateByLastStr(str string, sep string) (prefix, suffix string) {
 		return str[:index], str[index+1:]
 	}
 }
+
+// LeftLower
+func LeftLower(s string) string {
+	if len(s) > 0 {
+		return strings.ToLower(string(s[0])) + s[1:]
+	}
+	return s
+}

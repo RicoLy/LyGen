@@ -24,9 +24,8 @@
   <component name="ChangeListManager">
     <list default="true" id="91185cee-a108-4be1-8d54-fb923254758f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/asset.go" beforeDir="false" afterPath="$PROJECT_DIR$/asset/asset.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/templates/fiber/cmd/core.go.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/fiber/cmd/core.go.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/templates/fiber/cmd/internal/config/config.go.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/fiber/cmd/internal/config/config.go.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logic/logic.go" beforeDir="false" afterPath="$PROJECT_DIR$/logic/logic.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/str.go" beforeDir="false" afterPath="$PROJECT_DIR$/tools/str.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

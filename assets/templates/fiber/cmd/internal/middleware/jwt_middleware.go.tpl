@@ -1,8 +1,8 @@
 package middleware
 
 import (
-	"{{.}}/cmd/internal/constant"
-	jwt2 "{{.}}/cmd/internal/tools/jwt"
+	"{{.}}/internal/constant"
+	jwt2 "{{.}}/internal/tools/jwt"
 	"github.com/gofiber/fiber/v2"
 	"github.com/pkg/errors"
 	"time"

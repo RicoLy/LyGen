@@ -271,9 +271,9 @@ func (l Logic) GenerateFiberProject() (err error) {
 	middleWares := make(map[string]bool, 0)
 	fmt.Println("GenerateFiberProject|constant.Project", constant.Project)
 	for _, srv := range services {
-		srv.Meta = constant.Project
+		srv.Meta = constant.PackagePrefix
 		for _, method := range srv.Methods {
-			method.Mata = constant.Project
+			method.Mata = constant.PackagePrefix
 			for _, ware := range method.MiddleWares {
 				if !constant.GMiddleware[ware] {
 					middleWares[ware] = true
@@ -299,7 +299,7 @@ func (l Logic) GenerateFiberProject() (err error) {
 	// 生成routes
 	project := &types.Project{
 		Services: services,
-		Name:     constant.Project,
+		Name:     constant.PackagePrefix,
 	}
 	if err = l.GenerateFiberTpl(constant.TplFiberInHanRoutes, project, ""); err != nil {
 		return
@@ -308,7 +308,7 @@ func (l Logic) GenerateFiberProject() (err error) {
 	// 生成middleware
 	for middleWare, _ := range middleWares {
 		middle := make(map[string]string)
-		middle["Mata"] = constant.Project
+		middle["Mata"] = constant.PackagePrefix
 		middle["Name"] = middleWare
 		pos := strings.ReplaceAll(constant.TplFiberMiddleware, constant.TplFiberPrefix, constant.CustomDir)
 		dir, fileName := tools.SeparateByLastStr(pos, "/")
@@ -329,6 +329,7 @@ func (l *Logic) GenerateFiberTpl(tpl string, data interface{}, pos string) (err 
 	if pos == "" {
 		pos = strings.ReplaceAll(tpl, constant.TplFiberPrefix, constant.CustomDir)
 	}
+	pos = strings.ReplaceAll(pos, "cmd", constant.ServiceName)
 	dir, _ := tools.SeparateByLastStr(pos, "/")
 	_ = tools.CreateDir(dir)
 

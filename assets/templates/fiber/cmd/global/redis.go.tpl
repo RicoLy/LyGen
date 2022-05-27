@@ -1,7 +1,7 @@
 package global
 
 import (
-	"{{.}}/cmd/internal/config"
+	"{{.}}/internal/config"
 	"github.com/go-redis/redis/v8"
 )
 

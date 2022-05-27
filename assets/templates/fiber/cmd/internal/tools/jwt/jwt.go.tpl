@@ -1,9 +1,9 @@
 package jwt
 
 import (
-	"{{.}}/cmd/internal/config"
-	"{{.}}/cmd/internal/tools/cypher"
-	"{{.}}/cmd/model"
+	"{{.}}/internal/config"
+	"{{.}}/internal/tools/cypher"
+	"{{.}}/model"
 	"github.com/dgrijalva/jwt-go"
 	"time"
 )

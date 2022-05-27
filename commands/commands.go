@@ -79,6 +79,8 @@ func (c *Commands) customProtoPath(_ ...string) int {
 		line, _, _ := bufio.NewReader(os.Stdin).ReadLine()
 		if string(line) != "" {
 			constant.ProtoPath = string(line)
+			constant.ServiceName = tools.FindTopStr(tools.FindLastStr(constant.ProtoPath, constant.DS), ".")
+			constant.PackagePrefix = fmt.Sprintf("%s/%s", constant.Project, constant.ServiceName)
 			break
 		}
 		fmt.Print("Proto file path is null please reset>")

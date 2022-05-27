@@ -70,11 +70,14 @@ func (g Generator) GenerateFixedFiles() (err error) {
 	fmt.Println("GenerateFixedFiles|constant.Project", constant.Project)
 	for _, tpl := range constant.TplFixedList {
 		pos := strings.ReplaceAll(tpl, constant.TplFiberPrefix, constant.CustomDir)
+		pos = strings.ReplaceAll(pos, "cmd", constant.ServiceName)
 		dir, _ := tools.SeparateByLastStr(pos, "/")
+		data := constant.Project
 		if tpl != constant.TplFiberGoMod {
 			_ = tools.CreateDir(dir)
+			data = constant.PackagePrefix
 		}
-		if err = g.GenerateFiles(tpl, constant.Project, tools.FindTopStr(pos, ".tpl")); err != nil {
+		if err = g.GenerateFiles(tpl, data, tools.FindTopStr(pos, ".tpl")); err != nil {
 			return
 		}
 	}

@@ -1,12 +1,12 @@
 package {{.Group}}
 
 import (
-	{{if ne .Request "CommReq"}}"{{.Mata}}/cmd/internal/constant"
-    "{{.Mata}}/cmd/internal/tools/validate"
-    "{{.Mata}}/cmd/internal/types"
+	{{if ne .Request "CommReq"}}"{{.Mata}}/internal/constant"
+    "{{.Mata}}/internal/tools/validate"
+    "{{.Mata}}/internal/types"
     "github.com/pkg/errors"{{end}}
-	"{{.Mata}}/cmd/internal/logic/{{.Group}}"
-	"{{.Mata}}/cmd/internal/response"
+	"{{.Mata}}/internal/logic/{{.Group}}"
+	"{{.Mata}}/internal/response"
 	"github.com/gofiber/fiber/v2"
 )
 

@@ -1,11 +1,11 @@
 package main
 
 import (
-	"{{.}}/cmd/global"
-	"{{.}}/cmd/internal/config"
-	"{{.}}/cmd/internal/handler"
-	"{{.}}/cmd/internal/middleware"
-	"{{.}}/cmd/internal/tools/logger"
+	"{{.}}/global"
+	"{{.}}/internal/config"
+	"{{.}}/internal/handler"
+	"{{.}}/internal/middleware"
+	"{{.}}/internal/tools/logger"
 	"flag"
 	"fmt"
 	"github.com/gofiber/fiber/v2"

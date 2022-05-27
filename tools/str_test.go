@@ -25,7 +25,7 @@ func TestCheckExist(t *testing.T) {
 }
 
 func TestFindLastStr2(t *testing.T) {
-	pos := strings.ReplaceAll(constant.TplFiberGoMod, constant.TplFiberPrefix, "F:\\code\\goProject\\LyGen\\Demo/abc")
+	pos := strings.ReplaceAll(constant.TplFiberGoMod, "cmd", "service")
 	dir, _ := SeparateByLastStr(pos, constant.DS)
 	fmt.Println("dir", dir)
 }

@@ -1,8 +1,8 @@
 package global
 
 import (
-	"{{.}}/cmd/internal/config"
-	"{{.}}/cmd/model"
+	"{{.}}/internal/config"
+	"{{.}}/model"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"

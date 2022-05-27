@@ -24,8 +24,26 @@
   <component name="ChangeListManager">
     <list default="true" id="91185cee-a108-4be1-8d54-fb923254758f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Demo/fiber_demo.proto" beforeDir="false" afterPath="$PROJECT_DIR$/Demo/FiberDemo.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asset/asset.go" beforeDir="false" afterPath="$PROJECT_DIR$/asset/asset.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/templates/demo/bindata.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/templates/fiber/cmd/core.go.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/fiber/cmd/core.go.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/templates/fiber/cmd/global/init.go.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/fiber/cmd/global/init.go.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/templates/fiber/cmd/global/mysql.go.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/fiber/cmd/global/mysql.go.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/templates/fiber/cmd/global/redis.go.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/fiber/cmd/global/redis.go.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/templates/fiber/cmd/internal/handler/handler.go.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/fiber/cmd/internal/handler/handler.go.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/templates/fiber/cmd/internal/handler/routes.go.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/fiber/cmd/internal/handler/routes.go.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/templates/fiber/cmd/internal/logic/logic.go.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/fiber/cmd/internal/logic/logic.go.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/templates/fiber/cmd/internal/middleware/jwt_middleware.go.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/fiber/cmd/internal/middleware/jwt_middleware.go.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/templates/fiber/cmd/internal/middleware/middleware.go.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/fiber/cmd/internal/middleware/middleware.go.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/templates/fiber/cmd/internal/middleware/wrapCtx_middleware.go.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/fiber/cmd/internal/middleware/wrapCtx_middleware.go.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/templates/fiber/cmd/internal/response/response.go.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/fiber/cmd/internal/response/response.go.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/templates/fiber/cmd/internal/tools/jwt/jwt.go.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/fiber/cmd/internal/tools/jwt/jwt.go.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/commands.go" beforeDir="false" afterPath="$PROJECT_DIR$/commands/commands.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constant/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/constant/config.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logic/logic.go" beforeDir="false" afterPath="$PROJECT_DIR$/logic/logic.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/str.go" beforeDir="false" afterPath="$PROJECT_DIR$/tools/str.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/genService.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/genService.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/str_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/tools/str_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +142,7 @@
       <pattern value="^\QTestFindLastStr2\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestFindLastStr2 in LyGen/tools" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestFindLastStr2 in LyGen/tools (3)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="LyGen" />
       <working_directory value="$PROJECT_DIR$/tools" />
       <framework value="gotest" />
@@ -138,10 +156,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Go Build.go build LyGen" />
+        <item itemvalue="Go Test.TestFindLastStr2 in LyGen/tools (3)" />
         <item itemvalue="Go Test.TestFindLastStr2 in LyGen/tools (2)" />
         <item itemvalue="Go Test.TestFindLastStr2 in LyGen/tools (1)" />
         <item itemvalue="Go Build.go build Demo/cmd" />
-        <item itemvalue="Go Test.TestFindLastStr2 in LyGen/tools" />
       </list>
     </recent_temporary>
   </component>
@@ -177,22 +195,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="512" y="121" width="1200" height="798" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1653366699822" />
-    <state width="1340" height="265" key="GridCell.Tab.0.bottom" timestamp="1653469126871">
+    <state width="1340" height="265" key="GridCell.Tab.0.bottom" timestamp="1653623276435">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="265" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1653469126871" />
-    <state width="1340" height="265" key="GridCell.Tab.0.center" timestamp="1653469126871">
+    <state width="1340" height="265" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1653623276435" />
+    <state width="1340" height="265" key="GridCell.Tab.0.center" timestamp="1653623276435">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="265" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1653469126871" />
-    <state width="1340" height="265" key="GridCell.Tab.0.left" timestamp="1653469126871">
+    <state width="1340" height="265" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1653623276435" />
+    <state width="1340" height="265" key="GridCell.Tab.0.left" timestamp="1653623276435">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="265" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1653469126871" />
-    <state width="1340" height="265" key="GridCell.Tab.0.right" timestamp="1653469126871">
+    <state width="1340" height="265" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1653623276435" />
+    <state width="1340" height="265" key="GridCell.Tab.0.right" timestamp="1653623276435">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="265" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1653469126871" />
+    <state width="1340" height="265" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1653623276435" />
     <state width="1340" height="328" key="GridCell.Tab.1.bottom" timestamp="1653388296069">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -213,6 +231,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="929" y="221" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1653367772694" />
+    <state x="688" y="249" width="596" height="536" key="find.popup" timestamp="1653621553989">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="688" y="249" width="596" height="536" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1653621553989" />
     <state x="961" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1653379074491">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

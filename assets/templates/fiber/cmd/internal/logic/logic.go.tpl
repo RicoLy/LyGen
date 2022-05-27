@@ -1,7 +1,7 @@
 package {{.Group}}
 
 import (
-	"{{.Mata}}/cmd/internal/types"
+	"{{.Mata}}/internal/types"
 	"github.com/gofiber/fiber/v2"
 )
 

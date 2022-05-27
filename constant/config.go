@@ -50,6 +50,8 @@ var (
 	CustomDir       = ""
 	Project         = ""
 	ProtoPath       = ""
+	ServiceName     = ""
+	PackagePrefix   = ""
 )
 
 var (

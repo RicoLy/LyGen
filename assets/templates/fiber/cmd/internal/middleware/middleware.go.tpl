@@ -1,7 +1,7 @@
 package middleware
 
 import (
-	"{{.Mata}}/cmd/internal/tools/logger"
+	"{{.Mata}}/internal/tools/logger"
 	"github.com/gofiber/fiber/v2"
 )
 

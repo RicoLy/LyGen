@@ -2,8 +2,8 @@ package handler
 
 import (
     {{range .Services}}
-    "{{.Meta}}/cmd/internal/handler/{{.Group}}"{{end}}
-	"{{.Name}}/cmd/internal/middleware"
+    "{{.Meta}}/internal/handler/{{.Group}}"{{end}}
+	"{{.Name}}/internal/middleware"
 	"github.com/gofiber/fiber/v2"
 )
 
